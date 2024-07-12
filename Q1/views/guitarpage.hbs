@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarDetails</title>
+</head>
+{{> navbar}}
+<h1>Guitars</h1>
+<body>
+    {{#each guitar}}
+    <ul class="">
+        <li>{{this.Type}}</li>
+        <li>{{this.Color}}</li>
+        <li>{{this.Material}}</li>
+        <li>{{this.Brand}}</li>
+        <li>{{this.Price}}</li>
+        <button><a href="/delete/{{this.guitarId}}">Delete</a></button>
+    </ul>
+    {{/each}}
+</body>
+
+</html>
